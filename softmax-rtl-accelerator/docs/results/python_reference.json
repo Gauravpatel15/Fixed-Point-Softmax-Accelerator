@@ -1,0 +1,18 @@
+{
+  "status": "Python reference checks passed; RTL status is evaluated separately",
+  "rows": 22,
+  "tokens": 67587,
+  "metrics": {
+    "Horner": {
+      "max_exponential_absolute_error_exhaustive_65536_differences": 6.449204022340727e-05,
+      "max_probability_absolute_error_test_rows": 1.568624273018404e-05,
+      "max_sum_error_test_rows": 0.00030225515365600586
+    },
+    "Estrin": {
+      "max_exponential_absolute_error_exhaustive_65536_differences": 6.430121683553836e-05,
+      "max_probability_absolute_error_test_rows": 1.5865056664510213e-05,
+      "max_sum_error_test_rows": 0.00030553340911865234
+    }
+  },
+  "reference": "float Softmax on the same quantized input scores"
+}

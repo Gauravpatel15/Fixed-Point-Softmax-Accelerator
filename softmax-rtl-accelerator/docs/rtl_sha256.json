@@ -1,0 +1,7 @@
+{
+  "exp_approx.sv": "1ff8a21b49ef48ba6a5bb99869e6331a6babc09728f692b77bff7562d7eec437",
+  "poly_eval.sv": "c68f60293086742fff05eac9beb71ae3be6cbe7a3cfe6abac014cc5ae28a4398",
+  "reciprocal_q24.sv": "f05109590dd26cd97fbf1c3c5e13f65cbaa37e6dfbd7d4c2a1b055c007847bf8",
+  "softmax_core.sv": "2b6ada38fd21c4c184d41762b50d9318bcd58777f193415aae3ab87d79d5ce2c",
+  "softmax_pkg.sv": "ed1c70c0838934a918e4d42d03baa3a2f12c6f90c831d8ef299048704fd4e690"
+}

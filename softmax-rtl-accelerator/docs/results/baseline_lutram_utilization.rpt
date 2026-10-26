@@ -1,0 +1,32 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Oct 26 02:17:27 2026
+| Host : [redacted for publication]
+| Command      : report_utilization -hierarchical -file <PROJECT_ROOT>/reports/final_utilization.rpt
+| Design       : softmax_core
+| Device       : xczu7ev-ffvf1517-3-e
+| Speed File   : -3
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------+----------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+|      Instance     |     Module     | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++-------------------+----------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+| softmax_core      |          (top) |      10801 |       2609 |    8192 |    0 | 581 |      0 |      0 |    0 |          7 |
+|   (softmax_core)  |          (top) |      10018 |       1826 |    8192 |    0 | 383 |      0 |      0 |    0 |          2 |
+|   exp_unit        |     exp_approx |        694 |        694 |       0 |    0 |  88 |      0 |      0 |    0 |          5 |
+|     (exp_unit)    |     exp_approx |         53 |         53 |       0 |    0 |  34 |      0 |      0 |    0 |          1 |
+|     polynomial    |      poly_eval |        642 |        642 |       0 |    0 |  54 |      0 |      0 |    0 |          4 |
+|   reciprocal_unit | reciprocal_q24 |         93 |         93 |       0 |    0 | 110 |      0 |      0 |    0 |          0 |
++-------------------+----------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining

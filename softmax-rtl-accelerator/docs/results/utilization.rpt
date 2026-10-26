@@ -1,0 +1,34 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Oct 26 13:36:45 2026
+| Host : [redacted for publication]
+| Command      : report_utilization -hierarchical -file <PROJECT_ROOT>/reports/bram_post_route/utilization.rpt
+| Design       : softmax_core
+| Device       : xczu7ev-ffvf1517-3-e
+| Speed File   : -3
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------------+-------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+|         Instance         |       Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++--------------------------+-------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+| softmax_core             |             (top) |        483 |        483 |       0 |    0 | 325 |     12 |      1 |    0 |          7 |
+|   (softmax_core)         |             (top) |         90 |         90 |       0 |    0 | 127 |      0 |      0 |    0 |          2 |
+|   exp_unit               |        exp_approx |        289 |        289 |       0 |    0 |  88 |      0 |      0 |    0 |          5 |
+|     (exp_unit)           |        exp_approx |         47 |         47 |       0 |    0 |  34 |      0 |      0 |    0 |          1 |
+|     polynomial           |         poly_eval |        245 |        245 |       0 |    0 |  54 |      0 |      0 |    0 |          4 |
+|   reciprocal_unit        |    reciprocal_q24 |        106 |        106 |       0 |    0 | 110 |      0 |      0 |    0 |          0 |
+|   row_memory_xpm         | xpm_memory_sdpram |          1 |          1 |       0 |    0 |   0 |     12 |      1 |    0 |          0 |
+|     xpm_memory_base_inst |   xpm_memory_base |          1 |          1 |       0 |    0 |   0 |     12 |      1 |    0 |          0 |
++--------------------------+-------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
